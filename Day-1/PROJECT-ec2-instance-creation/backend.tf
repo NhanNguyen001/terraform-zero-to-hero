@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "115196976858-terraform-state"    # Replace with your actual S3 bucket name
+    bucket         = "s3-bucket-apse1-dev-terraform-sandboxes"    # Replace with your actual S3 bucket name
     key            = "terraform.tfstate"         # Path to the state file within the bucket
     region         = "ap-southeast-1"            # Same region as in your provider configuration
     encrypt        = true                        # Enable server-side encryption
